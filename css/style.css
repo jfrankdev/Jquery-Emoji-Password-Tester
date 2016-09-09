@@ -10,20 +10,22 @@ body { height: 100%; font-size: 16px; background: #ffff4c; font-family: 'Lato'; 
   top: 15%;
  left: 15%;
   margin-top: -50px;
-  margin-left: 150px;
+  margin-right: 250px;
      text-align: center;
     color: white;
     font-family: Helvetica;
-font-size: 250%;
-    font-weight: 900;
+font-size: 450%;
+    font-weight: 500;
 }
 
-.container {
+.box {
+  position: absolute;
   max-width: 480px;
     margin-top: 300px;
   margin-left: 400px;
 
 }
+
 
 
 #password-strength{
@@ -33,42 +35,58 @@ font-size: 250%;
      text-align: center;
 }
 
+.emojis {
+     position: absolute;
+ 
+  margin-top: 340px;
+  margin-left: 420px;
+}
+
 
 
 
 
 
  #normal{
-   position: absolute;
+
   visibility: hidden;
-  margin-top: 40px;
-  margin-left: 420px;
+
   font-size: 200%;
 }  
 
  #medium{
-   position: absolute;
   visibility: hidden;
-  margin-top: 40px;
-  margin-left: 420px;
+
+  font-size: 200%;
+} 
+
+ #medium2{
+  visibility: hidden;
+
   font-size: 200%;
 } 
 
  #strong{
-   position: absolute;
+
   visibility: hidden;
-  margin-top: 40px;
-  margin-left: 420px;
+
   font-size: 200%;
 } 
 
  #verystrong{
-   position: absolute;
+
   visibility: hidden;
-  margin-top: 40px;
-  margin-left: 420px;
+ 
   font-size: 200%;
 } 
+
+.emojitext {
+text-align: center;
+    color: white;
+    font-family: Helvetica;
+font-size: 200%;
+    font-weight: 900;
+}
 
 
 
