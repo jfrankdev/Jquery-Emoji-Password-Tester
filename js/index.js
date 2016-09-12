@@ -44,6 +44,9 @@ $(document).ready(function() {
     //if it has one number, increase strength value
     if (password.match(/([0-9])/))  {strength += 1};
  
+     //if it has two numbers, increase strength value
+    if (password.match(/(.*[0-9].*[0-9])/))  {strength += 1};
+
     //if it has two special characters, increase strength value
     if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) {strength += 2};
  
