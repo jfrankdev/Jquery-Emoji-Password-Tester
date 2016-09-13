@@ -82,7 +82,7 @@ $(document).ready(function() {
         document.getElementById("medium2").style.visibility = "visible";
     }
 
-    if (strength == 4) {
+    if (strength == 5) {
         document.getElementById("medium2").style.visibility = "hidden";
         document.getElementById("normal").style.visibility = "hidden";        
         document.getElementById("medium").style.visibility = "hidden";
@@ -90,7 +90,7 @@ $(document).ready(function() {
         document.getElementById("strong").style.visibility = "visible";
     }
 
-    if (strength > 4) {
+    if (strength > 5) {
   
         document.getElementById("strong").style.visibility = "hidden";
         document.getElementById("normal").style.visibility = "hidden";        
