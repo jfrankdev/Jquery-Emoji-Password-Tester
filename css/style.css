@@ -97,35 +97,37 @@ right: -23%;
 
  #normal{
 
-  visibility: hidden;
+
 
   font-size: 200%;
 }
 
  #medium{
-  visibility: hidden;
+
 
   font-size: 200%;
 }
 
  #medium2{
-  visibility: hidden;
+
 
   font-size: 200%;
 }
 
  #strong{
 
-  visibility: hidden;
+
 
   font-size: 200%;
 }
 
  #verystrong{
 
-  visibility: hidden;
-
   font-size: 200%;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .emojitext {

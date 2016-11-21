@@ -16,6 +16,10 @@ $(document).ready(function() {
    //initial strength
     var strength = 0;
 
+if (password.length == 0) {
+  $('#normal, #medium, #medium2, #strong, #verystrong').addClass('hide');
+}
+
 
     //if length is 8 characters or more, increase strength value, problematic line
     if (password.length > 0) {strength += 1};
@@ -38,46 +42,30 @@ $(document).ready(function() {
 
 
     //if the password length is less than 7, return message.
+
     if (strength == 1) {
-        $('#normal').css({
-              "visibility": "visible"
-          });
+        $('#normal').removeClass('hide');
+        $('#medium, #medium2, #strong, #verystrong').addClass('hide');
     }
 
     if (strength == 2) {
-      $('#normal').css({
-            "visibility": "hidden"
-        });
-        $('#medium').css({
-              "visibility": "visible"
-          });
+      $('#medium').removeClass('hide');
+      $('#normal, #medium2, #strong, #verystrong').addClass('hide');
     }
 
     if (strength == 3) {
-      $('#medium').css({
-            "visibility": "hidden"
-        });
-        $('#medium2').css({
-              "visibility": "visible"
-          });
+      $('#medium2').removeClass('hide');
+      $('#normal, #medium, #strong, #verystrong').addClass('hide');
     }
 
     if (strength == 5) {
-      $('#medium2').css({
-            "visibility": "hidden"
-        });
-        $('#strong').css({
-              "visibility": "visible"
-          });
+      $('#strong').removeClass('hide');
+      $('#normal, #medium, #medium2, #verystrong').addClass('hide');
     }
 
     if (strength > 5) {
-      $('#strong').css({
-            "visibility": "hidden"
-        });
-        $('#verystrong').css({
-              "visibility": "visible"
-          });
+      $('#verystrong').removeClass('hide');
+      $('#normal, #medium, #medium2, #strong').addClass('hide');
     }
-}
+  }
 });
