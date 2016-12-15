@@ -1,141 +1,133 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-
-
-html { height: 100%; }
-
-body { height: 100%;
-       font-size: 16px;
-       background: #ffff4c;
-       font-family: 'Lato';
-        }
-  @media (max-width: 960px) {
-  body{
-    background: white;
-  }}
-
-
-@media (max-width: 960px) {
-        * {
-      overflow-x: hidden;
-      overflow-y: hidden;
-      }}
-
-
-  .centered {
-   position: absolute;
-  top: 15%;
- left: 15%;
-  margin-top: -50px;
-  margin-right: 250px;
-     text-align: center;
-    color: white;
-    font-family: Helvetica;
-font-size: 450%;
-    font-weight: 500;
+html {
+	height: 100%;
 }
+
+body {
+	height: 100%;
+	font-size: 16px;
+	background: #ffff4c;
+	font-family: 'Lato';
+}
+
 @media (max-width: 960px) {
+	body {
+		background: white;
+	}
+}
+
+@media (max-width: 960px) {
+	* {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+}
+
 .centered {
-    display: none;
-}}
-
-#mobiletext{
-  position: relative;
- top: 100px;
- margin-right: 0px;
-    text-align: center;
-   color: black;
-   font-family: Helvetica;
-font-size: 3.0vh;
-   font-weight: 500;
-}
-@media (min-width: 960px) {
-#mobiletext{
-  display: none;
-}}
-
-
-#page{
-       -webkit-animation-duration: 3s;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	margin-top: -50px;
+	margin-right: 250px;
+	text-align: center;
+	color: white;
+	font-family: Helvetica;
+	font-size: 450%;
+	font-weight: 500;
 }
 
-
-.box {
-  position: relative;
-  max-width: 480px;
-  top: 300px;
-right: -23%;
-}
 @media (max-width: 960px) {
-.box {
-    display: none;
-}}
-
-
-#emojisgroup{
-  position: relative;
-  right: 19%;
+	.centered {
+		display: none;
+	}
 }
 
+#mobiletext {
+	position: relative;
+	top: 100px;
+	margin-right: 0px;
+	text-align: center;
+	color: black;
+	font-family: Helvetica;
+	font-size: 3.0vh;
+	font-weight: 500;
+}
 
-#password-strength{
- position: absolute;
-  margin-bottom: 550px;
-  margin-left: 450px;
-     text-align: center;
+@media (min-width: 960px) {
+	#mobiletext {
+		display: none;
+	}
+}
+
+#page {
+	-webkit-animation-duration: 3s;
+}
+
+.box {
+	position: relative;
+	max-width: 480px;
+	top: 300px;
+	right: -23%;
+}
+
+@media (max-width: 960px) {
+	.box {
+		display: none;
+	}
+}
+
+#emojisgroup {
+	position: relative;
+	right: 19%;
+}
+
+#password-strength {
+	position: absolute;
+	margin-bottom: 550px;
+	margin-left: 450px;
+	text-align: center;
 }
 
 .emojis {
-     position: absolute;
-
-  margin-top: 340px;
-  margin-left: 420px;
+	position: absolute;
+	margin-top: 340px;
+	margin-left: 420px;
 }
 
 #wrapper {
-    margin-left:auto;
-    margin-right:auto;
-    width:960px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
 }
 
- #normal{
-
-
-
-  font-size: 200%;
+#normal {
+	font-size: 200%;
 }
 
- #medium{
-
-
-  font-size: 200%;
+#medium {
+	font-size: 200%;
 }
 
- #medium2{
-
-
-  font-size: 200%;
+#medium2 {
+	font-size: 200%;
 }
 
- #strong{
-
-
-
-  font-size: 200%;
+#strong {
+	font-size: 200%;
 }
 
- #verystrong{
-
-  font-size: 200%;
+#verystrong {
+	font-size: 200%;
 }
 
 .hide {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .emojitext {
-text-align: center;
-    color: white;
-    font-family: Helvetica;
-font-size: 200%;
-    font-weight: 900;
+	text-align: center;
+	color: white;
+	font-family: Helvetica;
+	font-size: 200%;
+	font-weight: 900;
 }
