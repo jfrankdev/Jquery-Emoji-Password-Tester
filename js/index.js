@@ -15,27 +15,27 @@ $(document).ready(function () {
 		//if length is 8 characters or more, increase strength value, problematic line
 		if (password.length > 0) {
 			strength += 1
-		};
+		}
 		//if password contains both lower and uppercase characters, increase strength value
 		if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/) || password.length >= 3) {
 			strength += 1
-		};
+		}
 		//if it has one special character, increase strength value
 		if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
 			strength += 1
-		};
+		}
 		//if it has one number, increase strength value
 		if (password.match(/([0-9])/)) {
 			strength += 1
-		};
+		}
 		//if it has two numbers, increase strength value
 		if (password.match(/(.*[0-9].*[0-9])/)) {
 			strength += 1
-		};
+		}
 		//if it has two special characters, increase strength value
 		if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) {
 			strength += 2
-		};
+		}
 
 		//evaluate password strength
 		if (strength == 1) {
