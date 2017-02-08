@@ -1,7 +1,6 @@
 document.passwordForm.password.focus();
 
 $(document).ready(function () {
-	var result = $("#password-strength");
 	$('#password').keyup(function () {
 		$(".bar-text").html(checkStrength($('#password').val()))
 	});
