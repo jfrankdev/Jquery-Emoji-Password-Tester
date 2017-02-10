@@ -11,51 +11,58 @@ $(document).ready(function () {
 		if (password.length == 0) {
 			$('#normal, #medium, #medium2, #strong, #verystrong').addClass('hide');
 		}
-		//if length is 8 characters or more, increase strength value, problematic line
+		//if length is 8 characters or more, increase strength value
 		if (password.length > 0) {
 			strength += 1
 		}
-		//if password contains both lower and uppercase characters, increase strength value
+		//if password contains both lower and uppercase characters
 		if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/) || password.length >= 3) {
 			strength += 1
 		}
-		//if it has one special character, increase strength value
+		//if it has one special character
 		if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
 			strength += 1
 		}
-		//if it has one number, increase strength value
+		//if it has one number
 		if (password.match(/([0-9])/)) {
 			strength += 1
 		}
-		//if it has two numbers, increase strength value
+		//if it has two numbers
 		if (password.match(/(.*[0-9].*[0-9])/)) {
 			strength += 1
 		}
-		//if it has two special characters, increase strength value
+		//if it has two special characters
 		if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) {
 			strength += 2
 		}
 
-		//evaluate password strength
-		if (strength == 1) {
+		//evaluate to emojis
+		switch(true){
+			case (strength == 1):
+			console.log(strength);
 			$('#normal').removeClass('hide');
 			$('#medium, #medium2, #strong, #verystrong').addClass('hide');
-		}
-		if (strength == 2) {
+			break;
+			case (strength == 2):
+			console.log(strength);
 			$('#medium').removeClass('hide');
 			$('#normal, #medium2, #strong, #verystrong').addClass('hide');
-		}
-		if (strength == 3) {
+			break;
+			case (strength == 3):
+			console.log(strength);
 			$('#medium2').removeClass('hide');
 			$('#normal, #medium, #strong, #verystrong').addClass('hide');
-		}
-		if (strength == 5) {
+			break;
+			case (strength == 5):
+			console.log(strength);
 			$('#strong').removeClass('hide');
 			$('#normal, #medium, #medium2, #verystrong').addClass('hide');
-		}
-		if (strength > 5) {
+			break;
+			case (strength > 5):
+			console.log(strength);
 			$('#verystrong').removeClass('hide');
 			$('#normal, #medium, #medium2, #strong').addClass('hide');
+			break;
 		}
 	}
 });
